@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+/* Add some basic styling to the button */
+.nextImageButton {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+</style>
+<script>
+  var imageSources0 = [
+    "/images/china.jpeg",
+    "/images/fujian.png"
+    // Add more image sources as needed
+  ];
+  var imageSources1 = [
+    "/images/pork.png",
+    "/images/tomato_egg.jpeg"
+    // Add more image sources as needed
+  ];
+  var imageSources2 = [
+    "/images/CNY.png",
+    "/images/mooncake.jpeg"
+    // Add more image sources as needed
+  ];
+  var imageSources3 = [
+    "/images/altar.png",
+    "/images/red_furnace.png",
+    "/images/joss_paper.png"
+    // Add more image sources as needed
+  ];
+  var imageSources4 = [
+    "/images/halloween.png",
+    "/images/goofy.png",
+    "/images/tkd.png",
+    "/images/disney.png",
+    "/images/cruise.png"
+    // Add more image sources as needed
+  ];
+  var imageSources5 = [
+    "/images/vball.png",
+    "/images/last_day.png",
+    "/images/grad.png",
+    "/images/amp_project.png"
+    // Add more image sources as needed
+  ];
+  // JavaScript function to handle button click
+  var currentIndexes = {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0
+  };
+  function nextImage(postIndex, imageSources) {
+    currentIndexes[postIndex] = (currentIndexes[postIndex] + 1) % imageSources.length;
+    document.getElementById("blogImage" + postIndex).src = imageSources[currentIndexes[postIndex]];
+  }
+</script>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Brian's Cultural Identity</b></h1>
+  <p>Welcome to brian.com<span class="w3-tag"></span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage5" src="/images/vball.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>High school-College</b></h3>
+      <h5>Connecticut, United States <span class="w3-opacity"><font size ="-1">November 14, 2023</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>As I prepared to graduate high school, one can't help but reminisce the past. 
+        I grew up with these people I call my friends and they helped shaped me to be the person I am today. My culture isn't just Chinese. It is Chinese American.
+        Although I am Chinese, I also have western influences and my upbringing is a reflection of that.
+      </p>
+      <p>Currently, I am studying Computer Science and UConn, 
+        and I hope these next 4 years can continue to influence and sculpt my character as a whole as well as my culture.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(5, imageSources5)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage4" src="/images/halloween.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Childhood</b></h3>
+      <h5>Massachusetts, United States <span class="w3-opacity"><font size ="-1">July 24, 2015</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I grew up with an older brother that always won during our fights, a little cousin that always wanted to play.
+        My parents friend's all had children around the same age as my brother and I, so meeting new people often wasn't out of the ordinary.
+        I like to think that this is how I grew to have an extroverted personality.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(4, imageSources4)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage3" src="/images/altar.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Family</b></h3>
+      <h5>Massachusetts, United States <span class="w3-opacity"><font size ="-1">February 19, 2015</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Growing up I've been taught that family was always the most important. 
+        Today is Chinese New Year, and along with the food and praying at the altar, my family and I would all stand around the red paper furnace and burn joss paper. 
+        Every year we would pray to our deceased ancestors to wish them good virtue in the afterlife.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(3, imageSources3)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage2" src="/images/CNY.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Chinese Holidays</b></h3>
+      <h5>Massachusetts, United States <span class="w3-opacity"><font size ="-1">September 25, 2011</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>After moving back to the US, I had learn English in first grade with the help if everyone's best friend, ESL! 
+        Although I do miss China and all of my cousins, I'm excited to make new friends in America. One part of China that I really enjoyed was all of the holidays. 
+        To name a few that I really liked is Chinese New Year (red envelopes) and the Mid-Autumn Festival. My parents would always give me $100 bills for new years. 
+      </p>
+      <p>
+        The Mid-Autumn Festival always brought warm memories as the whole family would eat mooncake and watch the Mid-Autumn Festival show.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(2, imageSources2)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage1" src="/images/pork.png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Chinese Foods</b></h3>
+      <h5>Fujian, China <span class="w3-opacity"><font size ="-1">August 27, 2009</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I lived in China for total of 5 years now, and my Mom just told me that I was going to move back to the United States! 
+        During my time in China, I have grown to love my culture as well as our food. Some of my absolute favorites are hong shao rou, and tomato and eggs dish.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(1, imageSources1)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img id="blogImage0" src="/images/china.jpeg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>China Express Shipping</b></h3>
+      <h5>Fujian, China <span class="w3-opacity"><font size ="-1">April 15, 2004</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I flew on an airplane for the first time today! My Uncle told me that he was going to bring me to China to meet my grandparents, aunts, and uncles!
+        I am really excited, but I am super sleepy though. . .
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="nextImage(0, imageSources0)">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">5</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/images/brian_baby.jpeg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>First Day</b></h3>
+      <h5>Boston, MA <span class="w3-opacity"><font size ="-1">March 7, 2004</font></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I was born at Tufts Medical Center at around 1:30AM. I weighed 10lbs and was a chubby baby. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next Image»</button>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">12</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/brian.png" style="width: 100%">
+  <style>
+    img{
+      border-radius: 10px;
+    }
+  </style>
+    <div class="w3-container w3-white">
+      <h4><b>Brian Yu <font size ="-1">(he/him)</font></b></h4>
+      <p>I am a second year Computer Science student at the University of Connecticut. 
+        My hobbies include hanging out with friends, playing volleyball, and watching TV. 
+        I am an AMP Mentor and this is my cultural identity.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Favorite Foods</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/images/pho.png" alt="Image" class="w3-left w3-margin-right" style="width: 40px; height:40px">
+        <span class="w3-large">Pho</span><br>
+        <span></span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/images/pork.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Hong Shao Rou</span><br>
+        <span></span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/images/sushi.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Sushi</span><br>
+        <span><font size ="-1">specifically salmon</font></span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/images/hotpot.png" alt="Image" class="w3-left w3-margin-right" style="width:55px; height:45px">
+        <span class="w3-large">Hot Pot</span><br>
+        <p>
+        </p>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Brian Yu</a></p>
+</footer>
+
+</body>
+</html>
